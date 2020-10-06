@@ -1,4 +1,4 @@
-FROM opendk:16-alpine
+FROM openjdk:16-alpine
 
 ENV SCALA_VERSION 2.13
 ENV AMM_VERSION 2.2.0
