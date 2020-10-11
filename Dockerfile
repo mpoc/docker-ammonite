@@ -7,4 +7,4 @@ ENV AMM_URL https://github.com/lihaoyi/Ammonite/releases/download/$AMM_VERSION/$
 
 RUN apk --no-cache add curl ncurses && (echo "#!/usr/bin/env sh" && curl -L "$AMM_URL") > /usr/local/bin/amm && chmod +x /usr/local/bin/amm
 
-ENTRYPOINT amm
+ENTRYPOINT ["amm"]
